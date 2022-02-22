@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<!-- 
+< DBCP 설정을 위한 Context.xml 파일 설정 >
+Resource 태그를 사용하여 DBCP 정보 설정
+1. name 속성(*) : 공유할 리소스 이름 => DB 작업 수행 코드에서 DBCP API 를 통해 불러올 때 지정할 이름
+2. auth 속성 : 자원관리를 수행할 대상(인증 대상) 지정 => 톰캣이 인증을 수행하므로 "Container" 지정
+3. type 속성 : 웹 상에서 리소스 사용 시 실제 사용될 클래스 지정
+               => javax.sql 패키지의 DataSource 클래스(인터페이스) 지정
+               => name 속성에 지정된 이름을 통해 DBCP 접근 시 DataSource 타입 객체 리턴됨
+                  (DataSource 객체 내에 연결 객체(= Connection)가 저장되어 있음) 
+4. driverClassName 속성(*) : JDBC 드라이버 클래스 위치 지정
+                          ex) MySQL 의 경우 : "com.mysql.jdbc.Driver"
+                              Oracle 의 경우 : "oracle.jdbc.OracleDriver"
+5. url 속성(*) : JDBC 접속에 필요한 URL 정보 지정
+              ex) MySQL 의 경우 : "jdbc:mysql://접속주소:포트번호/DB명"
+                  Oracle 의 경우 : "jdbc:oracle:thin:@접속주소:포트번호:DB명"
+6. username 속성(*) : 데이터베이스 접속 계정명
+7. password 속성(*) : 데이터베이스 접속 패스워드
+8. maxActive 속성 : 동시에 제공할 Connection 갯수(일반 PC는 보통 8개 정도) - 생략 가능
+9. maxIdle 속성 : 현재 사용중인 Connection 객체 외에 여유분으로 남길 Connection 갯수 - 생략 가능
+
+=> (*) 기호가 붙은 속성은 경우에 따라 바뀔 수 있는 속성
+-->
+	<Resource
+		 name="jdbc/MySQL"
+		 auth="Container"
+		 type="javax.sql.DataSource"
+		 driverClassName="com.mysql.jdbc.Driver"
+		 url="jdbc:mysql://localhost:3306/funweb"
+		 username="root"
+		 password="1234"
+		 maxActive="500"
+		 maxIdle="100"
+	/>
+</Context>
+
+
+
+
+
+
+
+
+

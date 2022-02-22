@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+.clear{clear: both;}
+
+#main_img{
+	width: 971px;
+	height: 308px;
+	background-image: url("../images/img_back.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#main_img img{
+	margin: 9px 0 0 0;
+}
+
+/* -------------------------------- */
+article#front{
+	margin: 5px 0px 5px 0px;
+}
+#solution{
+	width:910px;
+	min-height:150px;
+	border: 1px solid #FFFFFF;
+	background-color: #ebebeb;
+	padding: 10px;
+	margin: 0 0 0 20px;
+	border-radius: 10px;
+}
+#hosting,#security,#payment{
+	width: 30%;
+	padding: 10px;
+	float: left;
+}
+#hosting h3,#security h3,#payment h3{
+	font-size: 14px;
+	font-weight: 600;
+	color: #333;
+	margin: 0 0 10px 80px;
+}
+#hosting p,#security p,#payment p{
+	font-size: 12px;
+	color: #333;
+	margin: 0 0 0px 80px;
+}
+#hosting{
+	background-image: url("../images/icon1.png");
+	background-repeat: no-repeat;
+	background-position: left 15px;
+}
+#security{
+	background-image: url("../images/icon2.png");
+	background-repeat: no-repeat;
+	background-position: left 15px;
+}
+#payment{
+	background-image: url("../images/icon3.png");
+	background-repeat: no-repeat;
+	background-position: left 15px;
+}
+
+/* -------------------------------- */
+
+#sec_news, #news_notice{
+	float: left;
+	width: 420px;
+	margin: 15px 0 0 20px;
+}
+
+#sec_news h3, #news_notice h3{
+	font-size: 14px;
+	font-style: italic;;
+	font-weight: normal;
+	width: 420px;
+	height: 24px;
+	background-image: url("../images/h3_back.jpg");
+	background-repeat: no-repeat;
+	padding: 5px 0 0 22px;
+
+}
+
+#sec_news .orange{
+	color: #f26522;
+}
+
+
+#sec_news dl{
+	margin-left: 6px;
+	
+}
+#sec_news dt{
+	font-size: 16px;
+	margin: 5px 0;
+	color: #F00
+}
+#sec_news dd{
+	margin-left: 0;
+	color: #333;
+	
+}
+
+
+#news_notice .brown{
+	color: #827b00;
+}
+
+
+#news_notice table{
+	width: 400px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#news_notice td{
+	padding: 6px 4px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+}
+#news_notice td.contxt{
+	background-image: url("../images/tr_back.gif");
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 15px;
+	text-align: left;
+	color: #333;
+}
+#news_notice a{
+	color: #333;
+	text-decoration: none;
+}
+#news_notice a:hover{
+	color: #F90;
+	text-decoration: none;
+}
