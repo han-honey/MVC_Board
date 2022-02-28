@@ -8,10 +8,10 @@ String id = (String)session.getAttribute("sessionId");
   <!-- login join -->
   <%if(id == null) { %>
   	<!-- 세션 아이디가 존재하지 않을 경우(= null 일 경우) login, join 링크 표시 -->
-  	<div id="login"><a href="../member/login.jsp">login</a> | <a href="../member/join.jsp">join</a></div>
+  	<div id="login"><a href="../member/MemberLoginForm.me">login</a> | <a href="../member/MemberJoinForm.me">join</a></div>
   <%} else { %>
 	  <!-- 세션 아이디가 존재할 경우(아니면) 로그인된 아이디(xxx 님)와 logout 링크(logout.jsp) 표시 -->
-	  <div id="login"><a href="#"><%=id %></a>님 | <a href="../member/logout.jsp">logout</a></div>
+	  <div id="login"><a href="#"><%=id %></a>님 | <a href="../member/MemberLogout.me">logout</a></div>
   <%} %>
   
   <div class="clear"></div>
